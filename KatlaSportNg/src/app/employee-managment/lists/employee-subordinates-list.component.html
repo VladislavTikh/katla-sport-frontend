@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>Subordtinates</h2>
+    <table class="table table-nonfluid">
+      <thead>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Role</th>
+          <th scope="col">Store ID</th>
+          <th scope="col">Photo</th>
+          <th scope="col"></th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let subordinate of subordinates">
+              <th class="table-row" scope="row">{{subordinate.id}}</th>
+              <th class="table-row" scope="row">{{subordinate.name}}</th>
+              <th class="table-row" scope="row">{{subordinate.role}}</th>
+              <th class="table-row" scope="row">{{subordinate.storeHiveId}}</th>
+              <th class="table-row" scope="row"><img class="profile-photo" src="{{subordinate.imageUri}}"/></th>
+            </tr>
+      </tbody>
+    </table>
+    <div class="btn-toolbar" role="toolbar" aria-label="Action buttons">
+      <div class="btn-group mr-1" role="group" aria-label="Back group">
+        <button routerLink="/employees" type="button" class="btn btn-primary">Back</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  
